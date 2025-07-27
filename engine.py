@@ -1,3 +1,4 @@
+#To use with GUI, lichess-bot
 import chess
 import random as rnd 
 import time
