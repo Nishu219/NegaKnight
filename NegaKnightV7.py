@@ -683,7 +683,7 @@ def iterative_deepening(board, max_time=TIME_LIMIT):
                   f"Nodes: {stats['nodes']}, QNodes: {stats['qnodes']}, TThits: {stats['tt_hits']}, "
                   f"NPS: {nps}, PV: {' '.join(m.uci() for m in pv)}")
 
-    return best_move or random.choice(list(board.legal_moves))
+    return best_move or rnd.choice(list(board.legal_moves))
 
 def NegaKnightV7(board):
     return iterative_deepening(board)
