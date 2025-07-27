@@ -682,7 +682,7 @@ def iterative_deepening(board, max_depth, time_limit):
         white_score = best_score if board.turn == chess.WHITE else -best_score
         print(f"info depth {depth} score cp {int(white_score)} time {int(depth_time*1000)} nodes {stats['nodes']} nps {nps} pv {' '.join(m.uci() for m in pv)}")
 
-    return best_move or random.choice(list(board.legal_moves))
+    return best_move or rnd.choice(list(board.legal_moves))
 
 class UCIEngine:
     def __init__(self):
