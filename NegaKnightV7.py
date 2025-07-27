@@ -1,3 +1,4 @@
+#To play against Humans
 import chess
 import chess.pgn
 import random as rnd 
