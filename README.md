@@ -61,7 +61,7 @@ KING_ATTACK_SCALE: Scaling factor for king attack based on the number of attacki
 
 PST: Piece-Square Tables for midgame ('mg') and endgame ('eg') evaluation.
 
-How it Works (Brief Overview)
+##How it Works (Brief Overview)
 NegaKnightV7 employs a Negamax algorithm with alpha-beta pruning as its core search function. This algorithm efficiently explores possible move sequences to find the best move for the current player.
 
 Key enhancements include:
