@@ -1,6 +1,6 @@
 import chess
 import chess.pgn
-import random
+import random as rnd 
 import time
 from collections import defaultdict
 from datetime import datetime
@@ -22,7 +22,6 @@ ATTACK_WEIGHTS[chess.ROOK] = 80
 ATTACK_WEIGHTS[chess.QUEEN] = 160
 KING_ATTACK_SCALE = [0, 0, 50, 75, 88, 94, 97, 99, 99, 99, 99, 99, 99, 99, 99, 99]
 
-import random as rnd
 rnd.seed(42)
 
 ZOBRIST_PIECES = {}
